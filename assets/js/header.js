@@ -1,6 +1,7 @@
 ;(
   function () {
     var header,
+        headerRec,
         about,
         about_bottom;
     // prevent js from loading too early
@@ -8,20 +9,18 @@
     // assign vars with correct element dimentions and create scroll event
     function mainFunction() {
       header        = document.getElementById("header");
-      header_height = header.getBoundingClientRect().height;
+      headerRec = header.getBoundingClientRect();
       about         = document.getElementsByClassName("about");
-      about_bottom  = about[0].getBoundingClientRect().bottom;
       window.addEventListener("scroll", changeClass);
     }
-      function changeClass() {
-          scroll = document.body.scrollTop;
-          if (scroll >= about_bottom - header_height) {
-            header.className = "header header-background";
-          } else if (scroll < about_bottom - header_height) {
-            header.className = "header";
-          } else {
-
-          }
+    function changeClass() {
+      about_bottom  = about[0].getBoundingClientRect().bottom;
+      scroll = document.body.scrollTop;
+      if (0 + headerRec.bottom >= about_bottom) {
+        header.className = "header header-background";
+      } else if (headerRec.bottom < about_bottom) {
+        header.className = "header";
       }
-}
+    }
+  }
 ());
