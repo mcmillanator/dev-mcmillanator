@@ -3,7 +3,7 @@
     var header,
         headerRec,
         about,
-        about_bottom;
+        aboutRec;
     // prevent js from loading too early
     document.addEventListener("load", mainFunction());
     // assign vars with correct element dimentions and create scroll event
@@ -14,11 +14,11 @@
       window.addEventListener("scroll", changeClass);
     }
     function changeClass() {
-      about_bottom  = about[0].getBoundingClientRect().bottom;
+      aboutRec  = about[0].getBoundingClientRect();
       scroll = document.body.scrollTop;
-      if (0 + headerRec.bottom >= about_bottom) {
+      if (0 + headerRec.bottom >= aboutRec.bottom) {
         header.className = "header header-background";
-      } else if (headerRec.bottom < about_bottom) {
+      } else if (headerRec.bottom < aboutRec.bottom) {
         header.className = "header";
       }
     }
