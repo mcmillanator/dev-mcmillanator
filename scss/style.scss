@@ -30,6 +30,13 @@ h1 {
 img {
   width: 100%;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px solid black;
+}
 .header {
   justify-content: space-between;
   text-align: center;
@@ -38,9 +45,11 @@ img {
   position: fixed;
   top: 0;
   height: 40px;
+  z-index: 1;
 }
 .header-background {
-  background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), #2089f7)
+  background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), #2089f7);
+  box-shadow: 0 0 10px 2px black;
 }
 .about {
   height: 100vh;
@@ -48,13 +57,8 @@ img {
   padding-top: 34vh;
   background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), rgb(32, 137, 247));
 }
-.about-blur {
-  > h1 {
-  -webkit-filter: blur(5px);
-  }
-  > sub {
-    -webkit-filter: blur(5px);
-  }
+.about-info {
+  transition: -webkit-filter .5s, filter .5s;
 }
 .heading1 {
   color: #D0D1D5;
@@ -68,4 +72,8 @@ img {
 }
 .fa {
   color: black;
+}
+.blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
 }
