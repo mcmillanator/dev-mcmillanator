@@ -1,0 +1,16 @@
+.icon {
+  > svg {
+    width: 25px;
+  }
+}
+.container {
+  background-color: #fff;
+  z-index: 0;
+  position: relative;
+  width: 100%;
+}
+.image {
+  > img {
+    width: 100%;
+  }
+}

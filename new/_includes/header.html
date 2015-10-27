@@ -1,0 +1,46 @@
+<header class="site-header">
+
+  <div class="wrapper">
+
+    <div class="header" id="header">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <ul class="icon-links">
+        <li><a href="https://github.com/mcmillanator" target="_blank" class="fa fa-github">
+            </a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/stanalanmcm" target="_blank"
+              class="fa fa-linkedin-square">
+            </a>
+        </li>
+        <li><a href="mailto:stanalanmcm@gmail.com?Subject=Found%20your%20portfolio"
+                class="fa fa-envelope">
+            </a>
+        </li>
+        <li><a href="tel:843-442-9982" class="fa fa-phone">
+            </a>
+        </li>
+        <li><a href="StanelyMcMillanResumev7.pdf" target="_blank" class="fa fa-file-pdf-o">
+            </a>
+        </li>
+        <li><a href="http://mcmillanator.github.io/resume/" target="_blank" class="fa fa-file-text">
+            </a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+      </a>
+
+      <div class="trigger">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+  </div>
+
+</header>

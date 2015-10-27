@@ -58,7 +58,12 @@ a:hover {
   background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), #2089f7); }
 
 .about-info {
-  transition: -webkit-filter .5s, filter .5s; }
+  -webkit-transition: -webkit-filter .5s;
+  transition: filter .5s; }
+
+.blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px); }
 
 .heading1 {
   color: #D0D1D5;
@@ -69,10 +74,43 @@ a:hover {
       display: none; } }
 
 .fa {
+  padding: 0 2px;
   color: black; }
 
-.blur {
-  -webkit-filter: blur(5px);
-  filter: blur(5px); }
+.container {
+  padding: 40px 10px 20px 20px;
+  background-color: #fff;
+  z-index: 0;
+  position: relative;
+  width: 100%; }
+
+.skills {
+  background-image: url("../icons/code10.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center center; }
+
+.skills-fixed {
+  position: fixed;
+  top: 40px;
+  background: white; }
+
+.skills-placeholder {
+  height: 1px; }
+
+.skills-list {
+  display: table; }
+  .skills-list > li {
+    padding: 10px 0;
+    display: block; }
+  .skills-list > li:before {
+    padding: 5px;
+    margin: 5px;
+    background-color: #E6E6E6;
+    border-radius: 50%; }
+
+.projects {
+  background-color: rgba(198, 198, 198, 0.53); }
 
 /*# sourceMappingURL=style.css.map */
