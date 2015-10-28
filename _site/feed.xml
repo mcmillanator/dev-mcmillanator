@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stanley McMillan</title>
+    <description>Full stack web developer. CSS3 HTML5 Ruby on Rails Javascript PHP SQL. Ask me about your awesome project.
+</description>
+    <link>mcmillanator.github.io/</link>
+    <atom:link href="mcmillanator.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 27 Oct 2015 20:02:07 -0400</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2015 20:02:07 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+  </channel>
+</rss>
