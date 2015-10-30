@@ -8,9 +8,16 @@
   z-index: 0;
   position: relative;
   width: 100%;
+  padding: 40px 10px 20px 20px;
 }
 .image {
   > img {
     width: 100%;
   }
+}
+.section-link {
+  width: 4em;
+}
+.header-link {
+  width: 2em;
 }

@@ -5,7 +5,6 @@
   padding-top: 1em;
   position: fixed;
   top: 0;
-  height: 40px;
   z-index: 1; }
 
 .header-background {
@@ -16,7 +15,7 @@
   color: #D0D1D5;
   text-shadow: 2px 2px black;
   display: inline; }
-  @media all and (max-width: 700px) {
+  @media all and (max-width: 500px) {
     .site-title {
       display: none; } }
 
@@ -35,7 +34,7 @@
   filter: blur(5px); }
 
 .skills {
-  background-image: url("../icons/code10.svg");
+  background-image: url("../assets/icons/code10.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
@@ -116,9 +115,6 @@ section {
   border-right: none;
   border-left: none; }
 
-article {
-  padding: 40px 10px 20px 20px; }
-
 .icon > svg {
   width: 25px; }
 
@@ -126,10 +122,17 @@ article {
   background-color: #fff;
   z-index: 0;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  padding: 40px 10px 20px 20px; }
 
 .image > img {
   width: 100%; }
+
+.section-link {
+  width: 4em; }
+
+.header-link {
+  width: 2em; }
 
 /**
  * Syntax highlighting styles

@@ -29,7 +29,7 @@
 
     function getElements(){
       dynamicClasses(header, skills, skillsList, skillsPH, "skills-heading", "skills-heading-fixed");
-      dynamicClasses(header, projects, projectsSection, skillsPH, "skills-heading", "skills-heading-fixed");
+      dynamicClasses(header, projects, projectsSection, projectsPH, "skills-heading", "skills-heading-fixed");
     }
 
     function dynamicClasses(el1, el2, el3, placeholder, class1, class2) {

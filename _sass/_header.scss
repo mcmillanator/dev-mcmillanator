@@ -5,8 +5,11 @@
   padding-top: 1em;
   position: fixed;
   top: 0;
-  height: 40px;
+  // height: 40px;
   z-index: 1;
+  @media all and (max-width: $width-mobile) {
+    // position: absolute;
+  }
 }
 .header-background {
   background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), #2089f7);
@@ -16,7 +19,7 @@
   color: #D0D1D5;
   text-shadow: 2px 2px black;
   display: inline;
-  @media all and (max-width: 700px) {
+  @media all and (max-width: $width-mobile) {
     display: none;
   }
 }
