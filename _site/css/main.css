@@ -12,12 +12,17 @@
   box-shadow: 0 0 10px 2px black; }
 
 .site-title {
-  color: #D0D1D5;
-  text-shadow: 2px 2px black;
-  display: inline; }
+  color: white;
+  text-shadow: 0px -1px black, 0px 1px black, 1px 0px black, -1px 0px black;
+  display: inline;
+  font-size: 2em; }
   @media all and (max-width: 500px) {
     .site-title {
       display: none; } }
+
+.header-link {
+  fill: #828282;
+  width: 2em; }
 
 .about {
   height: 100vh;
@@ -72,7 +77,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 14px; }
+  font-size: 16px; }
 
 *,
 *:before,
@@ -111,7 +116,7 @@ a:hover {
 
 section {
   padding: 40px 10px 20px 20px;
-  border: 6px solid #f4f4f4;
+  border: 6px solid #828282;
   border-right: none;
   border-left: none; }
 
@@ -130,9 +135,6 @@ section {
 
 .section-link {
   width: 4em; }
-
-.header-link {
-  width: 2em; }
 
 /**
  * Syntax highlighting styles
