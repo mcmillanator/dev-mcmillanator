@@ -1,7 +1,9 @@
 @import 'vars';
-@import 'header';
+@import 'mixins';
 @import 'index';
 @import 'fa';
+@import 'header';
+@import 'footer';
 
 
 html {
@@ -40,12 +42,7 @@ a {
   color: black;
   text-decoration: none;
 }
-a:hover {
-  border-bottom: 1px solid black;
-}
 section {
   padding: 40px 10px 20px 20px;
-  border: 6px solid $color-grey;
-  border-right: none;
-  border-left: none;
+  border-bottom: 6px solid $color-grey;
 }

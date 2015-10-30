@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stanley McMillan</title>
-    <description>Full stack web developer. CSS3 HTML5 Ruby on Rails Javascript PHP SQL. Ask me about your awesome project.
+    <description>Full stack web developer &lt;br&gt; CSS3 HTML5 Ruby on Rails Javascript PHP SQL
 </description>
     <link>mcmillanator.github.io/</link>
     <atom:link href="mcmillanator.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Oct 2015 23:18:16 -0400</pubDate>
-    <lastBuildDate>Thu, 29 Oct 2015 23:18:16 -0400</lastBuildDate>
+    <pubDate>Fri, 30 Oct 2015 16:39:29 -0400</pubDate>
+    <lastBuildDate>Fri, 30 Oct 2015 16:39:29 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
   </channel>

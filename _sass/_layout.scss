@@ -4,15 +4,16 @@
   }
 }
 .container {
-  background-color: #fff;
   z-index: 0;
   position: relative;
   width: 100%;
   padding: 40px 10px 20px 20px;
+  
 }
 .image {
+  text-decoration: none;
   > img {
-    width: 100%;
+    width: 30vw;
   }
 }
 .section-link {

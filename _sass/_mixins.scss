@@ -1,0 +1,7 @@
+@mixin background-svg ($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: contain;
+}
