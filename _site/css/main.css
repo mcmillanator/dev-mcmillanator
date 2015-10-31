@@ -94,7 +94,8 @@ section:nth-child(odd) {
     width: 30%; }
 
 .section-link {
-  width: 4em; }
+  width: 4em;
+  display: block; }
 
 .about {
   height: 100vh;
@@ -146,11 +147,14 @@ section:nth-child(odd) {
   background-size: contain;
   background-color: rgba(136, 136, 136, 0.2); }
 
-.inner {
+.col {
   display: inline-block;
-  width: 60%;
-  vertical-align: top;
-  margin: 2em; }
+  width: 49%;
+  vertical-align: middle; }
+
+.col:last-of-type {
+  margin: 0 0 0 2%;
+  width: 47%; }
 
 .contact {
   background-image: url("../assets/icons/user77.svg");
@@ -163,7 +167,7 @@ section:nth-child(odd) {
 .contact-list > li {
   margin: 1em 0;
   display: inline-block;
-  width: 30%; }
+  width: 40%; }
 
 .svg-link {
   fill: #828282;

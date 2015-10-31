@@ -16,6 +16,7 @@
 }
 .section-link {
   width: 4em;
+  display: block;
 }
 .about {
   height: 100vh;
@@ -63,11 +64,14 @@
   @include background-svg("../assets/icons/cogs3.svg");
   background-color: $color-trans-grey;
 }
-.inner {
+.col {
   display: inline-block;
-  width: 60%;
-  vertical-align: top;
-  margin: 2em;
+  width: 49%;
+  vertical-align: middle;
+}
+.col:last-of-type {
+  margin: 0 0 0 2%;
+  width: 47%;
 }
 .contact {
   @include background-svg("../assets/icons/user77.svg");
@@ -77,7 +81,7 @@
   > li {
     margin: 1em 0;
     display: inline-block;
-    width: 30%;
+    width: 40%;
   }
 }
 .svg-link {
