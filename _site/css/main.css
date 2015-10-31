@@ -91,7 +91,7 @@ section:nth-child(odd) {
 .image {
   text-decoration: none; }
   .image > img {
-    width: 30vw; }
+    width: 30%; }
 
 .section-link {
   width: 4em; }
@@ -99,7 +99,7 @@ section:nth-child(odd) {
 .about {
   height: 100vh;
   text-align: center;
-  padding-top: 34vh;
+  padding: 200px 0;
   background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), #2089f7); }
 
 .about-info {
@@ -126,12 +126,12 @@ section:nth-child(odd) {
   height: 1px; }
 
 .skills-list {
-  padding: 5vh 5vw;
+  padding: 5%;
   display: table; }
   .skills-list > li {
     padding: 10px 0;
     display: inline-block;
-    width: 40vw; }
+    width: 40%; }
   .skills-list > li:before {
     padding: 5px;
     margin: 5px;
@@ -148,7 +148,7 @@ section:nth-child(odd) {
 
 .inner {
   display: inline-block;
-  width: 60vw;
+  width: 60%;
   vertical-align: top;
   margin: 2em; }
 
@@ -158,13 +158,12 @@ section:nth-child(odd) {
   background-attachment: fixed;
   background-position: center center;
   background-size: contain;
-  height: 84vh;
   padding: 2em; }
 
 .contact-list > li {
   margin: 1em 0;
   display: inline-block;
-  width: 30vw; }
+  width: 30%; }
 
 .svg-link {
   fill: #828282;

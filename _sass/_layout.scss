@@ -11,7 +11,7 @@
 .image {
   text-decoration: none;
   > img {
-    width: 30vw;
+    width: 30%;
   }
 }
 .section-link {
@@ -20,7 +20,9 @@
 .about {
   height: 100vh;
   text-align: center;
-  padding-top: 34vh;
+  // this padding prevents this div from becoming too small on devices which
+  // do not support vh
+  padding: 200px 0;
   background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), rgb(32, 137, 247));
 }
 .about-info {
@@ -43,12 +45,12 @@
   height: 1px;
 }
 .skills-list {
-  padding: 5vh 5vw;
+  padding: 5%;
   display: table;
   > li {
     padding: 10px 0;
     display: inline-block;
-    width: 40vw;
+    width: 40%;
   }
   >li:before {
     padding: 5px;
@@ -63,20 +65,19 @@
 }
 .inner {
   display: inline-block;
-  width: 60vw;
+  width: 60%;
   vertical-align: top;
   margin: 2em;
 }
 .contact {
   @include background-svg("../assets/icons/user77.svg");
-  height: 84vh;
   padding: 2em;
 }
 .contact-list {
   > li {
     margin: 1em 0;
     display: inline-block;
-    width: 30vw;
+    width: 30%;
   }
 }
 .svg-link {
