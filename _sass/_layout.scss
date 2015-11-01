@@ -20,16 +20,15 @@
 .about {
   height: 100vh;
   text-align: center;
-  // this padding prevents this div from becoming too small on devices which
-  // do not support vh
-  padding: 200px 0;
   background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), rgb(32, 137, 247));
+  overflow: hidden;
 }
 .about-info {
   -webkit-transition: left .5s;
   transition: left .5s;
   position: relative;
   left: 0;
+  top: 40vh;
 }
 .about-left {
   left: -100%;
@@ -39,10 +38,7 @@
 }
 .anchor {
   position: relative;
-  bottom: 110px;
-}
-.anchor-container {
-  position: absolute;
+  top: $header-offset;
 }
 .skills {
   @include background-svg("../assets/icons/code10.svg");
@@ -85,6 +81,7 @@
 }
 .contact {
   @include background-svg("../assets/icons/user77.svg");
+  height: 70vh;
 }
 .contact-list {
     margin: 2em;

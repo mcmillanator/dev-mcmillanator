@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  max-height: 56px; }
+  height: 56px; }
 
 .header-background {
   background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), #2089f7);
@@ -53,11 +53,8 @@ ul {
 li {
   display: inline; }
 
-h1 {
-  margin: 1em 1em; }
-
-h2 {
-  margin: 1em 1em; }
+h1, h2 {
+  margin: 0 1em; }
 
 img {
   width: 100%; }
@@ -91,14 +88,15 @@ section:nth-child(even) {
 .about {
   height: 100vh;
   text-align: center;
-  padding: 200px 0;
-  background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), #2089f7); }
+  background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), #2089f7);
+  overflow: hidden; }
 
 .about-info {
   -webkit-transition: left .5s;
   transition: left .5s;
   position: relative;
-  left: 0; }
+  left: 0;
+  top: 40vh; }
 
 .about-left {
   left: -100%; }
@@ -108,10 +106,7 @@ section:nth-child(even) {
 
 .anchor {
   position: relative;
-  bottom: 110px; }
-
-.anchor-container {
-  position: absolute; }
+  top: -56px; }
 
 .skills {
   background-image: url("../assets/icons/code10.svg");
@@ -163,7 +158,8 @@ section:nth-child(even) {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-size: contain; }
+  background-size: contain;
+  height: 70vh; }
 
 .contact-list {
   margin: 2em; }
