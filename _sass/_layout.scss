@@ -26,12 +26,16 @@
   background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), rgb(32, 137, 247));
 }
 .about-info {
-  -webkit-transition: -webkit-filter .5s;
-  transition: filter .5s;
+  -webkit-transition: left .5s;
+  transition: left .5s;
+  position: relative;
+  left: 0;
 }
-.blur {
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
+.about-left {
+  left: -100%;
+}
+.about-right {
+  left: 100%;
 }
 .anchor {
   position: relative;

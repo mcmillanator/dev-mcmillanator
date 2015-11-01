@@ -13,6 +13,7 @@
       header          = document.getElementById("header");
       about           = document.getElementById("about");
       aboutInfo       = document.getElementById("about-info");
+      aboutInfoSub    = document.getElementById("about-info-sub");
       window.addEventListener("scroll", changeClass);
     }
     function changeClass() {
@@ -27,9 +28,11 @@
       }
 
       if (aboutInfoRec.top >= headerRec.bottom) {
-        aboutInfo.className = "about-info ";
+        aboutInfo.className     = "about-info";
+        aboutInfoSub.className  = "about-info";
       } else {
-        aboutInfo.className = "about-info blur";
+        aboutInfo.className     = "about-info about-left";
+        aboutInfoSub.className  = "about-info about-right";
       }
     }
   }
