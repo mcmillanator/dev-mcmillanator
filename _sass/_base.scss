@@ -44,6 +44,6 @@ section {
   padding: 40px 10px 20px 20px;
   // border-bottom: 6px solid $color-trans-black;
 }
-section:nth-child(odd) {
+section:nth-child(even) {
   background: $color-trans-white;
 }

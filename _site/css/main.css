@@ -69,7 +69,7 @@ a {
 section {
   padding: 40px 10px 20px 20px; }
 
-section:nth-child(odd) {
+section:nth-child(even) {
   background: rgba(255, 255, 255, 0.5); }
 
 .icon > svg {
