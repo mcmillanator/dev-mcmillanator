@@ -3,13 +3,13 @@
   color: black; }
 
 .header {
-  justify-content: space-between;
   text-align: center;
   width: 100%;
   padding-top: 1em;
   position: fixed;
   top: 0;
-  z-index: 1; }
+  z-index: 1;
+  max-height: 56px; }
 
 .header-background {
   background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), #2089f7);
@@ -43,29 +43,21 @@ html {
   of all elements when using the dev tools */
   /*border: 1px solid blue;*/ }
 
-body {
+body, ul, div, nav, h1, h2 {
   padding: 0;
   margin: 0; }
 
 ul {
-  list-style: none;
-  display: inline;
-  margin: 0;
-  padding: 0; }
+  list-style: none; }
 
 li {
   display: inline; }
 
-nav {
-  display: inline; }
-
 h1 {
-  padding: 1em 1em;
-  margin: 0; }
+  margin: 1em 1em; }
 
 h2 {
-  padding: 1em 1em;
-  margin: 0; }
+  margin: 1em 1em; }
 
 img {
   width: 100%; }
@@ -94,8 +86,7 @@ section:nth-child(odd) {
     width: 30%; }
 
 .section-link {
-  width: 4em;
-  display: block; }
+  width: 4em; }
 
 .about {
   height: 100vh;
@@ -110,6 +101,13 @@ section:nth-child(odd) {
 .blur {
   -webkit-filter: blur(5px);
   filter: blur(5px); }
+
+.anchor {
+  position: relative;
+  bottom: 110px; }
+
+.anchor-container {
+  position: absolute; }
 
 .skills {
   background-image: url("../assets/icons/code10.svg");
@@ -161,13 +159,14 @@ section:nth-child(odd) {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-size: contain;
-  padding: 2em; }
+  background-size: contain; }
 
-.contact-list > li {
-  margin: 1em 0;
-  display: inline-block;
-  width: 40%; }
+.contact-list {
+  margin: 2em; }
+  .contact-list > li {
+    margin: 1em 0;
+    display: inline-block;
+    width: 40%; }
 
 .svg-link {
   fill: #828282;

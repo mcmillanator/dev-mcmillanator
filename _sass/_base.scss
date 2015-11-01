@@ -17,29 +17,21 @@ html {
   of all elements when using the dev tools */
   /*border: 1px solid blue;*/
 }
-body {
+body, ul, div, nav, h1, h2 {
   padding: 0;
   margin: 0;
 }
 ul {
   list-style: none;
-  display: inline;
-  margin: 0;
-  padding: 0;
 }
 li {
   display: inline;
 }
-nav {
-  display: inline;
-}
 h1 {
-  padding: 1em 1em;
-  margin: 0;
+  margin: 1em 1em;
 }
 h2 {
-  padding: 1em 1em;
-  margin: 0;
+  margin: 1em 1em;
 }
 img {
   width: 100%;

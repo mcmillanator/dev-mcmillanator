@@ -16,7 +16,6 @@
 }
 .section-link {
   width: 4em;
-  display: block;
 }
 .about {
   height: 100vh;
@@ -33,6 +32,13 @@
 .blur {
   -webkit-filter: blur(5px);
   filter: blur(5px);
+}
+.anchor {
+  position: relative;
+  bottom: 110px;
+}
+.anchor-container {
+  position: absolute;
 }
 .skills {
   @include background-svg("../assets/icons/code10.svg");
@@ -75,9 +81,9 @@
 }
 .contact {
   @include background-svg("../assets/icons/user77.svg");
-  padding: 2em;
 }
 .contact-list {
+    margin: 2em;
   > li {
     margin: 1em 0;
     display: inline-block;

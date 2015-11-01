@@ -1,11 +1,11 @@
 .header {
-  justify-content: space-between;
   text-align: center;
   width: 100%;
   padding-top: 1em;
   position: fixed;
   top: 0;
   z-index: 1;
+  max-height: 56px;
   @media all and (max-width: $width-mobile) {
   }
 }
