@@ -70,13 +70,20 @@
   @include background-svg("../assets/icons/cogs3.svg");
   background-color: $color-trans-grey;
 }
+.project-wrapper {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
 .col {
+  text-align: left;
   display: inline-block;
   width: 49%;
   vertical-align: middle;
+  max-width: 500px;
 }
 .col:last-of-type {
-  margin: 0 0 0 2%;
+  margin: 0 auto 0 2%;
   width: 47%;
 }
 .contact {

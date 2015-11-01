@@ -64,7 +64,8 @@ a {
   text-decoration: none; }
 
 section {
-  padding: 40px 10px 20px 20px; }
+  padding: 40px 10px 20px 20px;
+  margin: 0 auto; }
 
 section:nth-child(even) {
   background: rgba(255, 255, 255, 0.5); }
@@ -144,13 +145,20 @@ section:nth-child(even) {
   background-size: contain;
   background-color: rgba(136, 136, 136, 0.2); }
 
+.project-wrapper {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center; }
+
 .col {
+  text-align: left;
   display: inline-block;
   width: 49%;
-  vertical-align: middle; }
+  vertical-align: middle;
+  max-width: 500px; }
 
 .col:last-of-type {
-  margin: 0 0 0 2%;
+  margin: 0 auto 0 2%;
   width: 47%; }
 
 .contact {
