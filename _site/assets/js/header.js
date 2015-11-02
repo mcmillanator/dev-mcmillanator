@@ -27,12 +27,12 @@
         header.className = "header";
       }
 
-      if (aboutInfoRec.top >= headerRec.bottom) {
-        aboutInfo.className     = "about-info";
-        aboutInfoSub.className  = "about-info";
-      } else {
+      if (aboutInfoRec.top <= headerRec.bottom || aboutInfoRec.top <= 40) {
         aboutInfo.className     = "about-info about-left";
         aboutInfoSub.className  = "about-info about-right";
+      } else {
+        aboutInfo.className     = "about-info";
+        aboutInfoSub.className  = "about-info";
       }
     }
   }

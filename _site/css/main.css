@@ -10,6 +10,9 @@
   top: 0;
   z-index: 1;
   height: 56px; }
+  @media all and (max-width: 500px) {
+    .header {
+      position: absolute; } }
 
 .header-background {
   background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), #2089f7);
@@ -131,6 +134,10 @@ section:nth-child(even) {
     padding: 10px 0;
     display: inline-block;
     width: 40%; }
+    @media all and (max-width: 500px) {
+      .skills-list > li {
+        display: inherit;
+        width: auto; } }
   .skills-list > li:before {
     padding: 5px;
     margin: 5px;
@@ -155,10 +162,19 @@ section:nth-child(even) {
   width: 49%;
   vertical-align: middle;
   max-width: 500px; }
+  @media all and (max-width: 500px) {
+    .col {
+      width: 100%;
+      display: inherit;
+      max-width: 100%; } }
 
 .col:last-of-type {
   margin: 0 auto 0 2%;
   width: 47%; }
+  @media all and (max-width: 500px) {
+    .col:last-of-type {
+      width: 100%;
+      margin: 0; } }
 
 .contact {
   background-image: url("../assets/icons/user77.svg");
@@ -167,6 +183,9 @@ section:nth-child(even) {
   background-position: center center;
   background-size: contain;
   height: 78vh; }
+  @media all and (max-width: 500px) {
+    .contact {
+      height: auto; } }
 
 .contact-list {
   margin: 2em; }
@@ -174,6 +193,10 @@ section:nth-child(even) {
     margin: 1em 0;
     display: inline-block;
     width: 40%; }
+    @media all and (max-width: 500px) {
+      .contact-list > li {
+        display: block;
+        width: inherit; } }
 
 .svg-link {
   fill: #828282;

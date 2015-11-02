@@ -58,6 +58,11 @@
     padding: 10px 0;
     display: inline-block;
     width: 40%;
+    @media all and (max-width: $width-mobile) {
+      display: inherit;
+      width: auto;
+
+    }
   }
   >li:before {
     padding: 5px;
@@ -80,14 +85,26 @@
   width: 49%;
   vertical-align: middle;
   max-width: 500px;
+  @media all and (max-width: $width-mobile) {
+    width: 100%;
+    display: inherit;
+    max-width: 100%;
+  }
 }
 .col:last-of-type {
   margin: 0 auto 0 2%;
   width: 47%;
+  @media all and (max-width: $width-mobile) {
+    width: 100%;
+    margin: 0;
+  }
 }
 .contact {
   @include background-svg("../assets/icons/user77.svg");
   height: 78vh;
+  @media all and (max-width: $width-mobile) {
+    height: auto;
+  }
 }
 .contact-list {
     margin: 2em;
@@ -95,6 +112,10 @@
     margin: 1em 0;
     display: inline-block;
     width: 40%;
+    @media all and (max-width: $width-mobile) {
+      display: block;
+      width: inherit;
+    }
   }
 }
 .svg-link {
