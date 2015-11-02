@@ -5,7 +5,7 @@
 .header {
   text-align: center;
   width: 100%;
-  padding-top: 1em;
+  padding: 5px 0;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -33,7 +33,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 16px; }
+  font-size: 18px; }
 
 *,
 *:before,
@@ -147,7 +147,6 @@ section:nth-child(even) {
 
 .project-wrapper {
   margin: 0 auto;
-  width: 70%;
   text-align: center; }
 
 .col {
