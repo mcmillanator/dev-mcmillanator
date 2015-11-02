@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  height: 56px;
+  height: $height-header;
   @media all and (max-width: $width-mobile) {
     position: absolute;
   }

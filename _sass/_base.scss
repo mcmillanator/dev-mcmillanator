@@ -1,9 +1,7 @@
 @import 'vars';
 @import 'mixins';
-@import 'fa';
 @import 'header';
 @import 'footer';
-
 
 html {
   box-sizing: border-box;
@@ -13,9 +11,6 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-  /* I leave this line in, but commented so I can easily see the borders
-  of all elements when using the dev tools */
-  /*border: 1px solid blue;*/
 }
 body, ul, div, nav, h1, h2 {
   padding: 0;
@@ -40,7 +35,6 @@ a {
 section {
   padding: 40px 10px 20px 20px;
   margin: 0 auto;
-  // border-bottom: 6px solid $color-trans-black;
 }
 section:nth-child(even) {
   background: $color-trans-white;
