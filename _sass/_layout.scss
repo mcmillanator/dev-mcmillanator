@@ -1,0 +1,107 @@
+.section-link {
+  width: 4em;
+}
+.about {
+  height: 100vh;
+  text-align: center;
+  background-image: radial-gradient(at top, rgba(255, 255, 255, 0.8), rgb(32, 137, 247));
+  overflow: hidden;
+}
+.about-info {
+  -webkit-transition: left .5s;
+  transition: left .5s;
+  position: relative;
+  left: 0;
+  top: 40vh;
+}
+.about-left {
+  left: -100%;
+}
+.about-right {
+  left: 100%;
+}
+.anchor {
+  position: relative;
+  top: $header-offset;
+}
+.skills-placeholder {
+  height: 1px;
+}
+.skills {
+  @include background-svg("../assets/icons/code10.svg");
+}
+.skills-list {
+  padding: 5%;
+  display: table;
+  > li {
+    padding: 10px 0;
+    display: inline-block;
+    width: 40%;
+    @media all and (max-width: $width-mobile) {
+      display: inherit;
+      width: auto;
+
+    }
+  }
+  >li:before {
+    padding: 5px;
+    margin: 5px;
+    background-color: #E6E6E6;
+    border-radius: 50%;
+  }
+}
+.projects {
+  @include background-svg("../assets/icons/cogs3.svg");
+  background-color: $color-trans-grey;
+}
+.project-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+.col {
+  text-align: left;
+  display: inline-block;
+  width: 50%;
+  max-width: 500px;
+  vertical-align: middle;
+  @media all and (max-width: $width-mobile) {
+    width: 100%;
+    max-width: 100%;
+    display: inherit;
+  }
+}
+.col:first-of-type {
+  max-height: 240px;
+  overflow: hidden;
+}
+.col:last-of-type {
+  margin: 0 auto 0 2%;
+  // width: 47%;
+  @media all and (max-width: $width-mobile) {
+    width: 100%;
+    margin: 0;
+  }
+}
+.contact {
+  @include background-svg("../assets/icons/user77.svg");
+  height: 78vh;
+  @media all and (max-width: $width-mobile) {
+    height: auto;
+  }
+}
+.contact-list {
+    margin: 2em;
+  > li {
+    margin: 1em 0;
+    display: inline-block;
+    width: 40%;
+    @media all and (max-width: $width-mobile) {
+      display: block;
+      width: inherit;
+    }
+  }
+}
+.svg-link {
+  fill: $color-link;
+  width: 2em;
+}
