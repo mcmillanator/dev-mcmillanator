@@ -1,11 +1,19 @@
-# Site settings
+---
 title: Stanley McMillan
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: stanalanmcm@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Full stack web developer <br> CSS3 HTML5 Ruby on Rails Javascript PHP SQL
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "mcmillanator.github.io" # the base hostname & protocol for your site
-github_username:  mcmillanator
+description: 'Full stack web developer <br> CSS3 HTML5 Ruby on Rails Javascript PHP
+  SQL
 
-# Build settings
+'
+baseurl: ''
+url: mcmillanator.github.io
+github_username: mcmillanator
 markdown: kramdown
